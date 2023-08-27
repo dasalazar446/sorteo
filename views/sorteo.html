@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sorteo Nisum</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+
+    <link rel="stylesheet" href="../assets/normalize/normalize.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+
+  </head>
+  <body>
+    <div class="container text-center mt-5 align-middle contenedor">
+      
+      <img class="logo" src="../assets/images/logo-nisum.png" alt="nisum logo" srcset="">
+      
+        <div id="consurso">
+          <h1 class="mb-5">El Ganador es: </h1>
+          <h2 id="name" class="mb-5"></h2>
+        </div>
+        <div class="buttons">
+          <a href="../index.html">
+            <button  class="btn btn-primary">Atras</button>
+          </a>
+          <button id="sorteo" class="btn btn-primary ms-3">Comenzar</button>  
+        </div>
+
+    </div>
+    
+    <!-- You can also require other files to run in this process -->
+    <!-- <script src="../renderer.js"></script> -->
+    <script src="../sorteo.js"></script>
+
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

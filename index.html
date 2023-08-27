@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sorteo Nisum</title>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    /> -->
+
+
+    <link rel="stylesheet" href="./assets/normalize/normalize.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+
+  </head>
+  <body>
+    <div class="container text-center mt-5 align-middle contenedor">
+      <img class="logo" src="./assets/images/logo-nisum.png" alt="nisum logo" srcset="">
+
+      <div class="mb-5">
+        <label for="formFile" class="form-label">Seleccione el archivo Excel</label>
+        <input  class="form-control" name="file" type="file" id="formFile"  accept="xlsx,xls">
+      </div>
+      <div>
+          <a href="./views/sorteo.html">
+            <button class="btn btn-primary">Siguiente</button>
+          </a>
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./assets/xlsx/xlsx.full.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

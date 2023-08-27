@@ -1,0 +1,26 @@
+html,body {
+    height: 100%;
+}
+.logo {
+    width: 500px;
+    margin-bottom: 30px;
+}
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    padding-bottom: 30%;
+}
+
+button {
+    margin-top: unset !important;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
